@@ -1,0 +1,8 @@
+model:
+  user:
+    name:
+      max: 140
+    email:
+      max: 140
+    password:
+      min: 6
