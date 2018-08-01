@@ -18,3 +18,11 @@ en:
       rails_news: "http://news.railstutorial.org/"
       rails_link: "http://www.railstutorial.org/"
       rails_scr: "http://screencasts.railstutorial.org/"
+    users:
+      new:
+        create: "Create my account"
+        confirmation: "Confirmation"
+        user_not_found: "User not found"
+      shared:
+        form_contains: "The form contains"
+        error: "error"
