@@ -1,7 +1,7 @@
-en:
+vi:
   static_pages:
     app_name: "Sample App"
-    welcome: "Welcome to the Sample App"
+    welcome: "Chào mừng đến với Sample App"
     signup_now: "Sign up now"
     home: "Home"
     help: "Help"
@@ -10,10 +10,11 @@ en:
     signupnow: "Sign up now!"
     contact: "Contact"
     login: "Log in"
+    account: "Account"
     users: "Users"
-    new_user: "New user?"
+    new_user: "User mới?"
     profile: "Profile"
-    settings: "Settings"
+    settings: "Cài đặt"
     logout: "Log out"
     this_is_home_page: "This is the home page for the"
     same_app: "sample application."
@@ -26,11 +27,11 @@ en:
     rails_scr: "http://screencasts.railstutorial.org/"
   users:
     new:
-      create: "Create my account"
-      confirmation: "Confirmation"
+      create: "Tạo tài khoản"
+      confirmation: "Xác nhận"
       user_not_found: "User not found"
     shared:
-      form_contains: "The form contains"
-      error: "error"
+      form_contains: "Form chứa"
+      error: "lỗi"
     sessions:
       invalid: "Invalid email/password combination"

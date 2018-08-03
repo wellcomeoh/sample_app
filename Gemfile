@@ -27,5 +27,6 @@ group :test do
   gem "chromedriver-helper"
   gem "selenium-webdriver"
 end
+gem "jquery-rails", "~> 4.3", ">= 4.3.3"
 gem "rubocop", "~> 0.54.0", require: false
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
