@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       else
         forget user
       end
-      redirect_to root_url
+      redirect_back_or user
     else
       handle_invalid_login
     end

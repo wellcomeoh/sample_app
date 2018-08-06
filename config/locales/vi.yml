@@ -10,12 +10,13 @@ vi:
     signupnow: "Sign up now!"
     contact: "Contact"
     login: "Log in"
-    account: "Account"
-    users: "Users"
+    users: "Người dùng"
+    account: "Tài khoản"
     new_user: "User mới?"
     profile: "Profile"
     settings: "Cài đặt"
     logout: "Log out"
+    pls_login: "Mời log in"
     this_is_home_page: "This is the home page for the"
     same_app: "sample application."
     contact_the_ruby: "Contact the Ruby on Rails Tutorial about the sample app at the"
@@ -36,3 +37,16 @@ vi:
     sessions:
       invalid: "Invalid email/password combination"
       remember: "Ghi nhớ"
+    edit:
+      edit_user: "Edit user"
+      update_profile: "Cập nhật profile"
+      save_change: "Lưu thay đổi"
+      change: "thay đổi"
+      updated: "Profile đã được cập nhật"
+    _users:
+      confirm: "Bạn chắc chứ?"
+    index:
+      all_usr: "Tất cả người dùng"
+    destroy:
+      deleted: "Người dùng đã bị xoá"
+      failed: "Xoá người dùng thất bại"
