@@ -50,3 +50,11 @@ en:
     destroy:
       deleted: "User deleted"
       failed: "Delete failed"
+  mailers:
+    acc_activated: "Account activated!"
+    invalid_link: "Invalid activation link"
+    message: "Account not activated. Check your email for the activation link."
+    check_activate: "Please check your email to activate your account."
+    acc_activation: "Account activation"
+    greeting: "Hi"
+    welcome: ", Welcome to the Sample App! Click on the link below to activate your account:"
