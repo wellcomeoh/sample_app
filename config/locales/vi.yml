@@ -35,3 +35,4 @@ vi:
       error: "lỗi"
     sessions:
       invalid: "Invalid email/password combination"
+      remember: "Ghi nhớ"

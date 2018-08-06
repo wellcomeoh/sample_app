@@ -34,3 +34,4 @@ en:
       error: "error"
     sessions:
       invalid: "Invalid email/password combination"
+      remember: "Remember me on this computer"

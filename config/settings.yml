@@ -6,3 +6,5 @@ model:
       max: 140
     password:
       min: 6
+session:
+  remember: 1
