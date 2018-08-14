@@ -50,3 +50,11 @@ vi:
     destroy:
       deleted: "Người dùng đã bị xoá"
       failed: "Xoá người dùng thất bại"
+  mailers:
+    acc_activated: "Tài khoản đã được kích hoạt"
+    invalid_link: "Link kích hoạt không có hiệu lực"
+    message: "Tài khoản chưa được kích hoạt. Kiểm tra email để kích hoạt tài khoản"
+    check_activate: "Hãy kiểm tra email để kích hoạt tài khoản"
+    acc_activation: "Kích hoạt tài khoản"
+    greeting: "Hi"
+    welcome: ", Chào mừng đến với Sample App! Click vào link bên dưới để kích hoạt tài khoản:"

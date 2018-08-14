@@ -4,13 +4,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:session][:email].downcase
     if user&.authenticate params[:session][:password]
-      log_in user
-      if params[:session][:remember_me] == Settings.session.remember
-        remember user
-      else
-        forget user
-      end
-      redirect_back_or user
+      do_activate_condition user
     else
       handle_invalid_login
     end
@@ -26,5 +20,20 @@ class SessionsController < ApplicationController
   def handle_invalid_login
     flash.now[:danger] = t "sessions.invalid_login"
     render :new
+  end
+
+  def do_activate_condition user
+    if user.activated?
+      log_in user
+      if params[:session][:remember_me] == Settings.session.remember
+        remember user
+      else
+        forget user
+      end
+      redirect_back_or user
+    else
+      flash[:warning] = t "mailers.message"
+      redirect_to root_url
+    end
   end
 end
