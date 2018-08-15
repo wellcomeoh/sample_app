@@ -1,0 +1,9 @@
+$('#micropost_picture').bind('change', function() {
+  var size_in_megabytes = this.files[0].size/1024/1024;
+   if (size_in_megabytes > <%= Settings.picture_size %>) {
+     alert('<%= t("shared._micropost.max_file_size") +
+       "#{Settings.picture_size}" + " MB. " +
+       t("shared._micropost.choose_smaller") %>'
+     );
+   }
+});
