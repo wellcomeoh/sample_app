@@ -1,0 +1,5 @@
+<% @user ||= current_user %>
+<div class="stats">
+  <%= link_to "#{@user.following.count}" + t("users.follow.following"), following_user_path(@user), id: "following", class: "stat" %>
+  <%= link_to "#{@user.followers.count}" + t("users.follow.followers"), followers_user_path(@user), id: "followers", class: "stat" %>
+</div>

@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: %i(show edit update destroy)
+  before_action :find_user, only: %i(show edit update destroy following followers)
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
@@ -49,6 +49,18 @@ class UsersController < ApplicationController
       flash[:error] = t "users.destroy.failed"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t "users.follow.following"
+    @users = @user.following.page(params[:page]).per Settings.rows
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "users.follow.follower"
+    @users = @user.followers.page(params[:page]).per Settings.rows
+    render "show_follow"
   end
 
   private
