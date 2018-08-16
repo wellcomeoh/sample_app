@@ -1,7 +1,7 @@
 class Micropost < ApplicationRecord
   belongs_to :user
   scope :load_microposts, ->{order created_at: :desc}
-  scope :feed, ->(id){where user_id: id}
+  scope :feed, ->(id){where "user_id IN (?) OR user_id = ?", "%#{id}%"}
   mount_uploader :picture, PictureUploader
   validates :user_id, presence: true
   validates :content, presence: true, length: {maximum: Settings.content_max}

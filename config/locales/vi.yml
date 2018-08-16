@@ -50,6 +50,13 @@ vi:
     destroy:
       deleted: "Người dùng đã bị xoá"
       failed: "Xoá người dùng thất bại"
+    follow:
+      following: "Đang theo dõi"
+      follower: "Những người theo dõi"
+      follow: "Theo dõi"
+      unfollow: "Bỏ theo dõi"
+      view_my_profile: "xem profile của tôi"
+      microposts: "Microposts:"
   mailers:
     acc_activated: "Tài khoản đã được kích hoạt"
     invalid_link: "Link kích hoạt không có hiệu lực"

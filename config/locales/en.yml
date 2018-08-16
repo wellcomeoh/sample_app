@@ -50,6 +50,13 @@ en:
     destroy:
       deleted: "User deleted"
       failed: "Delete failed"
+    follow:
+      following: "Following"
+      follower: "Followers"
+      follow: "Follow"
+      unfollow: "Unfollow"
+      view_my_profile: "view my profile"
+      microposts: "Microposts:"
   mailers:
     acc_activated: "Account activated!"
     invalid_link: "Invalid activation link"
